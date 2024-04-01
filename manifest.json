@@ -1,0 +1,14 @@
+{
+	"manifest_version": 3,
+	"name": "A till AU",
+	"version": "1.1",
+	"description": "Översätter alla A->AU.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
